@@ -287,7 +287,7 @@ Go to /etc/snmp/snmpd.conf
 Open the file in vi or nano /etc/snmp/snmpd.conf and add the following line to create SNMPV3 User (replace username and passwords with your own):
 
 ```
-createUser authPrivUser MD5 "authPassword" DES "privPassword"
+createUser authPrivUser SHA "authPassword" AES "privPassword"
 ```
 
 Make sure the agent listens to all interfaces by adding the following line inside snmpd.conf:
